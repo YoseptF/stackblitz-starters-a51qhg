@@ -1,4 +1,5 @@
 import "./globals.css";
+import "../utils/polyfillLocalStorage"
 
 import Header from "@/components/Header";
 import { Inter } from "next/font/google";

@@ -87,7 +87,7 @@ const createAssetsWithPreview = (
       ],
       metricIDs: ["Metric ID 1", "Metric ID 2"],
       calculation: "Calculation",
-      visuals: ["https://via.placeholder.com/800x400/f24"],
+      visuals: ["/assets/modalPlaceholder.png"],
       affiliateApplicability: "Affiliate Applicability"
     };
   case "Layouts":
