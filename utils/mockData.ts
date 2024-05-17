@@ -124,7 +124,7 @@ export const KPIAssets = createAssetsWithPreview(10, "KPI");
 export const LayoutAssets = createAssetsWithPreview(10, "Layouts");
 
 // Storyboards Tab
-export const StoryboardAssets = createAssetsWithPreview(10, "Storyboards");
+export const StoryboardAssets = createAssetsWithPreview(0, "Storyboards");
 
 const allAssets = [...KPIAssets, ...LayoutAssets, ...StoryboardAssets];
 

@@ -13,7 +13,7 @@ const CopyButton: FC<CopyButtonProps> = ({ id }) => {
   };
 
   return (
-    <button onClick={handleCopyToClipboard}>
+    <button className="focus:bg-gray-300 p-1 rounded" onClick={handleCopyToClipboard}>
       <RxLink1 size={20} />
     </button>
   );

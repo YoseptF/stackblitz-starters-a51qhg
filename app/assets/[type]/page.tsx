@@ -13,11 +13,19 @@ const Assets: FC<AssetsProps> = ({ params }) => {
   const { assets, description, title } = getAssetsByType(type);
   return (
     <main className="flex justify-start w-full flex-col gap-8">
-      <AssetSection
-        assets={assets}
-        subtitle={description}
-        title={title}
-      />
+      {
+        assets.length > 0
+        ? (
+          <AssetSection
+            assets={assets}
+            subtitle={description}
+            title={title}
+          />
+        )
+        : (
+          'Opps! nothing to see here, try searching on the bar above'
+        )
+      }
     </main>
   );
 };
