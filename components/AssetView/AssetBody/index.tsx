@@ -4,7 +4,7 @@ import { AssetContext } from "../../AssetSection/AssetProvider";
 import KpiBody from "./KpiBody";
 import LayoutBody from "./LayoutBody";
 
-const ModalBody: FC = () => {
+const AssetBody: FC = () => {
   const props = useContext(AssetContext);
   switch (props.type) {
   case "KPI":
@@ -31,4 +31,4 @@ const ModalBody: FC = () => {
   }
 };
 
-export default ModalBody;
+export default AssetBody;

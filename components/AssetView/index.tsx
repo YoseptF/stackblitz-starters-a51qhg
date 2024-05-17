@@ -3,26 +3,26 @@
 import { FC, useContext } from "react";
 
 import { AssetContext } from "../AssetSection/AssetProvider";
-import ModalBody from "./ModalBody";
+import AssetBody from "./AssetBody";
 import ModalHeader from "./ModalHeader";
 
 interface AssetModalProps {
-  ignoreModal?: boolean;
+  showAsModal?: boolean;
 }
 
-const AssetModal: FC<AssetModalProps> = ({ ignoreModal }) => {
+const AssetView: FC<AssetModalProps> = ({ showAsModal }) => {
   const { id } = useContext(AssetContext);
   return (
     <div
       id={id}
       // @ts-ignore
-      {...(!ignoreModal && { popover: "" })}
+      {...(showAsModal && { popover: "" })}
       className="h-[90vh] xl:w-[40vw] sm:w-[90vw] bg-white p-4 rounded-md shadow-lg"
     >
-      {!ignoreModal && <ModalHeader id={id} />}
-      <ModalBody />
+      {showAsModal && <ModalHeader id={id} />}
+      <AssetBody />
     </div>
   );
 };
 
-export default AssetModal;
+export default AssetView;

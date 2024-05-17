@@ -3,7 +3,7 @@
 import { FC, useContext } from "react";
 
 import { AssetContext } from "./AssetProvider";
-import AssetModal from "../AssetModal";
+import AssetView from "../AssetView";
 import Image from "next/image";
 
 const AssetCard: FC = () => {
@@ -23,7 +23,7 @@ const AssetCard: FC = () => {
           {createdAt && <span className="text-gray-300">{createdAt}</span>}
         </div>
       </button>
-      <AssetModal />
+      <AssetView showAsModal/>
     </>
   );
 };

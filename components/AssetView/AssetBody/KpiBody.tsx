@@ -4,7 +4,7 @@ import Favorite from "./Favorite";
 import { FC } from "react";
 import Image from "next/image";
 import { KPIAsset } from "@/utils/mockData";
-import ModalTitle from "./ModalTitle";
+import AssetTitle from "./AssetTitle";
 
 const KpiBody: FC<KPIAsset> = ({
   affiliateApplicability,
@@ -19,7 +19,7 @@ const KpiBody: FC<KPIAsset> = ({
   type
 }) => (
   <BodyWrapper>
-    <ModalTitle name={name} type={type} description={description} />
+    <AssetTitle name={name} type={type} description={description} />
     <DataRow entries={[
       {
         id,

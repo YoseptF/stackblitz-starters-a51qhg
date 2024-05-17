@@ -1,12 +1,12 @@
 import { FC } from "react";
 
-interface ModalTitleProps {
+interface AssetTitleProps {
   name: string;
   type: string;
   description: string;
 }
 
-const ModalTitle: FC<ModalTitleProps> = ({
+const AssetTitle: FC<AssetTitleProps> = ({
   name,
   type,
   description
@@ -21,4 +21,4 @@ const ModalTitle: FC<ModalTitleProps> = ({
   </div>
 );
 
-export default ModalTitle;
+export default AssetTitle;

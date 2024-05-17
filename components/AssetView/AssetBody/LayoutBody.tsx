@@ -2,7 +2,7 @@ import BodyWrapper from "./BodyWrapper";
 import DataRow from "@/components/DataRow";
 import { FC } from "react";
 import { LayoutsAsset } from "@/utils/mockData";
-import ModalTitle from "./ModalTitle";
+import AssetTitle from "./AssetTitle";
 
 const LayoutBody: FC<LayoutsAsset> = ({
   KPIsBeingUsed,
@@ -14,7 +14,7 @@ const LayoutBody: FC<LayoutsAsset> = ({
   type
 }) => (
   <BodyWrapper>
-    <ModalTitle name={name} type={type} description={description} />
+    <AssetTitle name={name} type={type} description={description} />
     <DataRow entries={[
       {
         id,
