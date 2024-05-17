@@ -1,4 +1,4 @@
-import AssetModal from "@/components/AssetSection/AssetModal";
+import AssetModal from "@/components/AssetModal";
 import AssetProvider from "@/components/AssetSection/AssetProvider";
 import { FC } from "react";
 import { getAssetById } from "@/utils/mockData";

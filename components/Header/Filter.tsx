@@ -5,6 +5,10 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 import { RxMagnifyingGlass } from "react-icons/rx";
 
+/**
+ * this probably need a debounce so we only push new routes
+ * after user has stopped typing
+ */
 const Filter: FC = () => {
   const searchParams = useSearchParams();
   const pathName = usePathname();
@@ -14,8 +18,6 @@ const Filter: FC = () => {
 
   const { push } = useRouter();
 
-  // this probably need a debounce so we only push new routes
-  // after user has stopped typing
   const handleFilter = (e: ChangeEvent<HTMLInputElement>) => {
     setFilter(e.target.value);
     if(!e.target.value) push("/");

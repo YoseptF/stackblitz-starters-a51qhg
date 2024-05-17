@@ -3,6 +3,9 @@ import Filter from "./Filter";
 import Link from "next/link";
 import Navbar from "../Navbar";
 
+/**
+ * I'd love to have this Header be sticky on top
+ */
 const Header: FC = () => (
   <header className="flex flex-col items-center justify-center py-4 gap-9">
     <Link href="/">

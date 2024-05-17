@@ -3,7 +3,7 @@
 import { FC, useContext } from "react";
 
 import { AssetContext } from "./AssetProvider";
-import AssetModal from "./AssetModal";
+import AssetModal from "../AssetModal";
 import Image from "next/image";
 
 const AssetCard: FC = () => {

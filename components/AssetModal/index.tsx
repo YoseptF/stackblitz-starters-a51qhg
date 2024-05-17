@@ -2,7 +2,7 @@
 
 import { FC, useContext } from "react";
 
-import { AssetContext } from "../AssetProvider";
+import { AssetContext } from "../AssetSection/AssetProvider";
 import ModalBody from "./ModalBody";
 import ModalHeader from "./ModalHeader";
 

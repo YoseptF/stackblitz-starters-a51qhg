@@ -1,6 +1,6 @@
 import { FC, useContext } from "react";
 
-import { AssetContext } from "../../AssetProvider";
+import { AssetContext } from "../../AssetSection/AssetProvider";
 import KpiBody from "./KpiBody";
 import LayoutBody from "./LayoutBody";
 
