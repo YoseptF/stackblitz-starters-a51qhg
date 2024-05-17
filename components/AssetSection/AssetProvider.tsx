@@ -10,8 +10,6 @@ interface AssetProviderProps {
   asset: Asset;
 }
 
-
-
 const AssetProvider: FC<AssetProviderProps> = ({ children, asset }) => (
   <AssetContext.Provider value={asset}>
     {children}

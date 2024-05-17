@@ -8,6 +8,13 @@ interface FavoriteProps {
   id: string;
 }
 
+/**
+ * this is pending a bunch of quility of life changes
+ * 
+ * - currently it needs to reload to check
+ * - currently there's no way to see all favorites at once
+ * - icon is to small/ not enough visualk changes when item is favrited. Maybe we can change the color of the button itself?
+ */
 const Favorite: FC<FavoriteProps> = ({ id }) => {
 
   const [isFavorite, setIsFavorite] = useState(checkFavoriteStatus(id));

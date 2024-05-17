@@ -1,8 +1,9 @@
 import { FC, useContext } from "react";
 
 import { AssetContext } from "../../AssetSection/AssetProvider";
-import KpiBody from "./KpiBody";
-import LayoutBody from "./LayoutBody";
+import KpiBody from "./Bodies/KpiBody";
+import LayoutBody from "./Bodies/LayoutBody";
+import StoryboardBody from "./Bodies/StoryboardBody";
 
 const AssetBody: FC = () => {
   const props = useContext(AssetContext);
@@ -14,17 +15,7 @@ const AssetBody: FC = () => {
   case "Layouts":
     return <LayoutBody {...props} />;
   case "Storyboards":
-    return (
-      <section>
-        <h1>Storyboards</h1>
-        <span>{props.description}</span>
-        <span>{props.applicableAffiliates}</span>
-        <span>{props.coupledKpiOrFilters}</span>
-        <span>{props.description}</span>
-        <span>{props.name}</span>
-        <span>{props.type}</span>
-      </section>
-    );
+    return <StoryboardBody {...props} />
 
   default:
     throw new Error(`Invalid asset type ${(props as { type: string }).type}`);

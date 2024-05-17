@@ -1,10 +1,10 @@
 import BodyWrapper from "./BodyWrapper";
 import DataRow from "@/components/DataRow";
-import Favorite from "./Favorite";
+import Favorite from "../Favorite";
 import { FC } from "react";
 import Image from "next/image";
 import { KPIAsset } from "@/utils/mockData";
-import AssetTitle from "./AssetTitle";
+import AssetTitle from "../AssetTitle";
 
 const KpiBody: FC<KPIAsset> = ({
   affiliateApplicability,

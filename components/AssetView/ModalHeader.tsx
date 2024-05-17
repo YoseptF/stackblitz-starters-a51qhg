@@ -6,6 +6,9 @@ interface ModalHeaderProps {
   id: string;
 }
 
+/**
+ * this kept the naming `ModalHeader` since now it only shows whern the asset view is in modal mode
+ */
 const ModalHeader: FC<ModalHeaderProps> = ({ id }) => (
   <header className="flex grow justify-end gap-2">
     {/* based on the icon I'm guessing this is a copy of the current url
